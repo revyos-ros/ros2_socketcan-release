@@ -19,7 +19,6 @@
 #define ROS2_SOCKETCAN__SOCKET_CAN_ID_HPP_
 
 #include <stdexcept>
-#include <cstdint>
 
 #include "ros2_socketcan/visibility_control.hpp"
 
@@ -29,6 +28,7 @@ namespace socketcan
 {
 
 constexpr std::size_t MAX_DATA_LENGTH = 8U;
+constexpr std::size_t MAX_FD_DATA_LENGTH = 64U;
 /// Special error for timeout
 class SOCKETCAN_PUBLIC SocketCanTimeout : public std::runtime_error
 {
