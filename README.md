@@ -1,3 +1,28 @@
+## ros2_socketcan (humble) - 1.2.0-2
+
+The packages in the `ros2_socketcan` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release --rosdistro humble ros2_socketcan` on `Tue, 28 May 2024 06:20:02 -0000`
+
+These packages were released:
+- `ros2_socketcan`
+- `ros2_socketcan_msgs`
+
+Version of package(s) in repository `ros2_socketcan`:
+
+- upstream repository: https://github.com/autowarefoundation/ros2_socketcan.git
+- release repository: https://github.com/revyos-ros/ros2_socketcan-release.git
+- rosdistro version: `1.2.0-1`
+- old version: `1.2.0-1`
+- new version: `1.2.0-2`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## ros2_socketcan (humble) - 1.2.0-1
 
 The packages in the `ros2_socketcan` repository were released into the `humble` distro by running `/usr/bin/bloom-release --override-release-repository-url=git@github.com:revyos-ros/ros2_socketcan-release.git -r humble ros2_socketcan` on `Thu, 25 Apr 2024 16:53:55 -0000`
