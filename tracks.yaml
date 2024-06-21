@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:ros2-gbp/ros2_socketcan-release.git
+release_repo_url: git@github.com:revyos-ros/ros2_socketcan-release
 tracks:
   foxy:
     actions:
