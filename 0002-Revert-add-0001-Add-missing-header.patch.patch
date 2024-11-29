@@ -1,4 +1,4 @@
-From dff3a56637a2ecba1154581ea57dc1cb37c1e407 Mon Sep 17 00:00:00 2001
+From 49f8e5b0e289549b440e636b94f10f22518abb51 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Fri, 29 Nov 2024 15:11:18 +0800
 Subject: [PATCH 2/2] Revert "add 0001-Add-missing-header.patch"
