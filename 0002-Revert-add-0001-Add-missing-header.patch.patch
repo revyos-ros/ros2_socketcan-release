@@ -1,0 +1,92 @@
+From dff3a56637a2ecba1154581ea57dc1cb37c1e407 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
+Date: Fri, 29 Nov 2024 15:11:18 +0800
+Subject: [PATCH 2/2] Revert "add 0001-Add-missing-header.patch"
+
+This reverts commit d283a8cfe0265cc44194db4ea596c3ffbebb4663.
+
+upstream add them.
+---
+ debian/patches/0001-Add-missing-header.patch | 61 --------------------
+ debian/patches/series                        |  1 -
+ 2 files changed, 62 deletions(-)
+ delete mode 100644 debian/patches/0001-Add-missing-header.patch
+ delete mode 100644 debian/patches/series
+
+diff --git a/debian/patches/0001-Add-missing-header.patch b/debian/patches/0001-Add-missing-header.patch
+deleted file mode 100644
+index b949b31..0000000
+--- a/debian/patches/0001-Add-missing-header.patch
++++ /dev/null
+@@ -1,61 +0,0 @@
+-From f7af12712793d6750ca462188c9d5b467971c44c Mon Sep 17 00:00:00 2001
+-From: Joshua Whitley <josh@electrifiedautonomy.com>
+-Date: Mon, 25 Mar 2024 07:36:35 -0700
+-Subject: [PATCH] Add missing header.
+-
+-Signed-off-by: Joshua Whitley <josh@electrifiedautonomy.com>
+----
+- include/ros2_socketcan/socket_can_common.hpp   | 1 +
+- include/ros2_socketcan/socket_can_id.hpp       | 1 +
+- include/ros2_socketcan/socket_can_receiver.hpp | 1 +
+- include/ros2_socketcan/socket_can_sender.hpp   | 1 +
+- 4 files changed, 4 insertions(+)
+-
+-diff --git a/include/ros2_socketcan/socket_can_common.hpp b/include/ros2_socketcan/socket_can_common.hpp
+-index 2b6c7d2..65a7d9c 100644
+---- a/include/ros2_socketcan/socket_can_common.hpp
+-+++ b/include/ros2_socketcan/socket_can_common.hpp
+-@@ -22,6 +22,7 @@
+- #include <linux/can.h>
+- 
+- #include <chrono>
+-+#include <cstdint>
+- #include <string>
+- #include <vector>
+- 
+-diff --git a/include/ros2_socketcan/socket_can_id.hpp b/include/ros2_socketcan/socket_can_id.hpp
+-index c9547ec..47dcc17 100644
+---- a/include/ros2_socketcan/socket_can_id.hpp
+-+++ b/include/ros2_socketcan/socket_can_id.hpp
+-@@ -18,6 +18,7 @@
+- #ifndef ROS2_SOCKETCAN__SOCKET_CAN_ID_HPP_
+- #define ROS2_SOCKETCAN__SOCKET_CAN_ID_HPP_
+- 
+-+#include <cstdint>
+- #include <stdexcept>
+- 
+- #include "ros2_socketcan/visibility_control.hpp"
+-diff --git a/include/ros2_socketcan/socket_can_receiver.hpp b/include/ros2_socketcan/socket_can_receiver.hpp
+-index b05628e..0546170 100644
+---- a/include/ros2_socketcan/socket_can_receiver.hpp
+-+++ b/include/ros2_socketcan/socket_can_receiver.hpp
+-@@ -21,6 +21,7 @@
+- #include <linux/can.h>
+- #include <array>
+- #include <chrono>
+-+#include <cstdint>
+- #include <cstring>
+- #include <string>
+- #include <vector>
+-diff --git a/include/ros2_socketcan/socket_can_sender.hpp b/include/ros2_socketcan/socket_can_sender.hpp
+-index 02c7524..cb2e8e8 100644
+---- a/include/ros2_socketcan/socket_can_sender.hpp
+-+++ b/include/ros2_socketcan/socket_can_sender.hpp
+-@@ -19,6 +19,7 @@
+- #define ROS2_SOCKETCAN__SOCKET_CAN_SENDER_HPP_
+- 
+- #include <chrono>
+-+#include <cstdint>
+- #include <string>
+- 
+- #include "ros2_socketcan/visibility_control.hpp"
+diff --git a/debian/patches/series b/debian/patches/series
+deleted file mode 100644
+index 22d4438..0000000
+--- a/debian/patches/series
++++ /dev/null
+@@ -1 +0,0 @@
+-0001-Add-missing-header.patch
+-- 
+2.46.0
+
